@@ -7,6 +7,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -49,6 +50,16 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamB = 0;
         displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
+        LinearLayout algeria = findViewById(R.id.algeriaplayer);
+        for (int i = 0; i < 11; i++) {
+            Button button = (Button) algeria.getChildAt(i);
+            button.setBackgroundColor(Color.parseColor("#DAF7A6"));
+        }
+        LinearLayout france = findViewById(R.id.franceplayer);
+        for (int i = 0; i < 11; i++) {
+            Button button = (Button) france.getChildAt(i);
+            button.setBackgroundColor(Color.parseColor("#DAF7A6"));
+        }
     }
 
     /**
