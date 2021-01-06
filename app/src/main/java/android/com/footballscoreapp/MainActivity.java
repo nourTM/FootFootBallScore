@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-
     /**
      * Increase the score for Team A by 1 points.
      */
@@ -32,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamA = scoreTeamA + 1;
         displayForTeamA(scoreTeamA);
     }
-
 
     /**
      * Increase the score for Team B by 1 points.
